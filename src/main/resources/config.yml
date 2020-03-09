@@ -1,0 +1,16 @@
+enchant:
+  #Enchant name (with color code)
+  #For item to apply the effect it has to have a line of lore EXACTLY as here.
+  #You can use multiple lore lines, just one of them has to match.
+  #You can have multiple effects on 1 item.
+  §7Slow I:
+    #effect to apply on victim (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html#SPEED)
+    effect: "SLOW"
+    #effect multiplier
+    level: 2
+    #duration in ticks (20 ticks is 1 second)
+    duration: 20
+  §7Absorption:
+    effect: "ABSORPTION"
+    level: 1
+    duration: 100

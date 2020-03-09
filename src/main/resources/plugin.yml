@@ -1,0 +1,14 @@
+main: eu.endermite.effectsonhit.EffectsOnHit
+name: EffectsOnHit
+version: 1.0.0
+description: Potion effects on hit with specified item lore
+author: YouHaveTrouble
+website: endermite.eu
+prefix: EffectsOnHit
+commands:
+  effectsonhitreload:
+    aliases: [onhitreload,effectsreload]
+    description: reloads plugin's config
+    permission: effectsonhit.reload
+    permission-message: You don't have permission to do this!
+    usage: /effectsonhitreload
