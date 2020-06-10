@@ -1,6 +1,6 @@
 main: eu.endermite.effectsonhit.EffectsOnHit
 name: EffectsOnHit
-version: 1.0.0
+version: 1.0.1
 description: Potion effects on hit with specified item lore
 author: YouHaveTrouble
 website: endermite.eu
