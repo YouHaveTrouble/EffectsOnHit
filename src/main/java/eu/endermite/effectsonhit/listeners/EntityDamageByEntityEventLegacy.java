@@ -11,7 +11,7 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 
-public class EntityDamageByEntityEvent implements Listener {
+public class EntityDamageByEntityEventLegacy implements Listener {
 
 	@EventHandler(priority = EventPriority.MONITOR)
 	public void onEntityDamageByEntity(org.bukkit.event.entity.EntityDamageByEntityEvent event) {
@@ -20,9 +20,9 @@ public class EntityDamageByEntityEvent implements Listener {
 				Player attacker = (Player) event.getDamager();
 				LivingEntity victim = (LivingEntity) event.getEntity();
 				try {
-					attacker.getInventory().getItemInMainHand();
-					if (attacker.getInventory().getItemInMainHand().hasItemMeta()) {
-						for (String l : attacker.getInventory().getItemInMainHand().getItemMeta().getLore()) {
+					attacker.getInventory().getItemInHand();
+					if (attacker.getInventory().getItemInHand().hasItemMeta()) {
+						for (String l : attacker.getInventory().getItemInHand().getItemMeta().getLore()) {
 							if (EffectsOnHit.getPlugin().getCache().hasEnchant(l)) {
 								String effect = EffectsOnHit.getPlugin().getCache().getEnchant(l).getEnchEffect();
 								int duration = EffectsOnHit.getPlugin().getCache().getEnchant(l).getEnchDuration();
