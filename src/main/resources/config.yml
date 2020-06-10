@@ -14,3 +14,7 @@ enchant:
     effect: "ABSORPTION"
     level: 1
     duration: 100
+messages:
+  no-permission: "You don't have permission to do this."
+  wrong-argument: "There is no such subcommand."
+  config-reloaded: "Config reloaded!"

@@ -1,5 +1,6 @@
 package eu.endermite.effectsonhit;
 
+import eu.endermite.effectsonhit.commands.OnHitMain;
 import eu.endermite.effectsonhit.commands.ReloadCommand;
 import eu.endermite.effectsonhit.configcache.ConfigCache;
 import eu.endermite.effectsonhit.listeners.EntityDamageByEntityEvent;
@@ -35,7 +36,7 @@ public class EffectsOnHit extends JavaPlugin {
         }
 
 
-        getCommand("effectsonhitreload").setExecutor(new ReloadCommand());
+        getCommand("onhit").setExecutor(new OnHitMain());
         getLogger().info("Loaded!");
     }
 
